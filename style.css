@@ -1,0 +1,296 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+#face{
+    height: 250px;
+    width: 250px;
+    background:linear-gradient(40deg,rgb(26,148,185),rgb(3, 3, 71));
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    box-shadow: 5px 5px 100px rgb(38, 0, 255)
+
+}
+
+#larm,#rarm{
+    height: 150px;
+    width: 40px;
+    background:linear-gradient(40deg,rgb(26,148,185),rgb(3,3,71));
+    margin-top: 18px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px rgb(38, 0, 255)
+}
+
+#center{
+    height: 200px;
+    width: 160px;
+    background:linear-gradient(40deg,rgb(26,148,185),rgb(3,3,71));
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 5px 100px rgb(38, 0, 255)
+}
+
+#body{
+    display:flex;
+    width: 350px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#lleg,#rleg{
+    height: 125px;
+    width: 40px;
+    background:linear-gradient(40deg,rgb(26,148,185),rgb(3,3,71));
+    margin-top: 18px;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: 5px 5px 100px rgb(38, 0, 255)
+}
+
+#legs{
+    display:flex;
+    width: 200px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#reye,#leye{
+    height: 40px;
+    width: 45px;
+    background: whitesmoke;
+    border-radius: 45%;
+    margin: auto;
+}
+#e1,#e2{
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 45%;
+}
+
+#main{
+    height: 750px;
+    width: 400px;
+    border: 10px solid rgb(10, 13, 24);
+    margin: auto;
+    box-shadow: 5px 5px 100px rgb(38, 0, 255)
+}
+
+#main:hover #face{
+
+    background:linear-gradient(rgb(255, 0, 0),rgb(248, 62, 93),rgb(255, 138, 5));
+    animation:changeface 1.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changeface{
+    0%{
+        transform:translatey(50px);
+        transform-origin: top center;
+    }
+    50%{
+        transform:translatey(-50px);
+        transform-origin: top center;
+
+    }
+    100%{
+        transform:translatey(50px);
+        transform-origin:bottom top;
+    }
+}
+
+#main:hover #larm{
+
+    background:linear-gradient(rgb(255, 5, 5),rgb(248, 62, 93),rgb(255, 138, 5));
+    animation:changelarm 1.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changelarm{
+    0%{
+        transform:rotate(120deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-120deg);
+        transform-origin: top center;
+
+    }
+    100%{
+        transform:rotate(120deg);
+        transform-origin:bottom top;
+    }
+   
+}
+  
+#main:hover #rarm{
+
+    background:linear-gradient(rgb(255, 0, 0),rgb(248, 62, 93),rgb(255, 138, 5));
+    animation:changerarm 1.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changerarm{
+    0%{
+        transform:rotate(120deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-120deg);
+        transform-origin: top center;
+
+    }
+    100%{
+        transform:rotate(120deg);
+        transform-origin:bottom top;
+    }
+}
+
+#main:hover #center{
+
+    background:linear-gradient(rgb(255, 0, 0),rgb(248, 62, 93),rgb(255, 138, 5));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10000px;
+    border-top-right-radius: 10000px;
+    box-shadow: 5px 5px 100px red;
+}
+    @keyframes changecenter{
+        0%{
+            transform:rotatex(90deg);
+            transform-origin: top center;
+        }
+        50%{
+            transform:rotatex(-90deg);
+            transform-origin: bottom;
+        }
+        100%{
+            transform:rotatex(90deg);
+            transform-origin: top center;
+
+        }
+}
+
+#main:hover #lleg{
+
+    background:linear-gradient(rgb(255, 0, 0),rgb(248, 62, 93),rgb(255, 138, 5));
+    animation:changelleg 1.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changelleg{
+    0%{
+        transform:rotate(25deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-25deg);
+        transform-origin: top center;
+    }
+    
+    100%{
+        transform:rotate(25deg);
+        transform-origin:bottom top;
+    }
+}
+
+#main:hover #rleg{
+
+    background:linear-gradient(rgb(255, 0, 0),rgb(248, 62, 93),rgb(255, 138, 5));
+    animation:changerleg 1.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changerleg{
+    0%{
+        transform:rotate(25deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-25deg);
+        transform-origin: top center;
+    }
+    
+    100%{
+        transform:rotate(25deg);
+        transform-origin:bottom top;
+    }
+}
+
+#main:hover #e1{
+
+    background:linear-gradient(rgb(2, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
+    animation:changee1 0.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changee1{
+    0%{
+        transform:rotate(360deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-360deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform:rotate(360deg);
+        transform-origin: top center;
+    }
+}
+#main:hover #e2{
+
+    background:linear-gradient(rgb(2, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
+    animation:changee2 0.9s infinite;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    box-shadow: 5px 5px 100px red;
+
+}
+@keyframes changee2{
+    0%{
+        transform:rotate(360deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform:rotate(-360deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform:rotate(360deg);
+        transform-origin: top center;
+}
+}
+#main:hover{
+    height: 750px;
+    width: 400px;
+    border: 10px solid rgb(10, 13, 24);
+    margin: auto;
+    box-shadow: 5px 5px 100px rgb(255, 0, 0);
+    animation: changemain 1.9s infinite;
+}
